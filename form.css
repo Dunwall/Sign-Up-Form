@@ -1,0 +1,21 @@
+:root{
+	--button: #596D48;
+	--inputBorder: #E5E7EB;
+	--invalid: red;
+	--focused: blue;
+}
+
+@font-face{
+	font-family: 'Norse-Bold';
+	src: url('Norse-Bold.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font{
+	font-family: 'Norse-Bold', sans-serif;
+}
+
+a{
+	color: var(--button);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign Up Form</title>
+	<link rel="stylesheet" href="form.css">
+</head>
+<body>
+	<main class="container">
+	<section>
+		<div class="side">
+			<img src="odin-lined.png" alt="Odin Logo">
+			<h2 class="font">ODIN</h2>
+		</div>
+	</section>
+	<section>
+		<div>
+			<h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+			Sign up <i>now</i> to get started.</h3>
+			<br>
+			<h3>You <i>know</i> you want to.</h3>
+		</div>
+		<div>
+			<form action="get" class="form">
+				<p>Let's do this!</p>
+				<label for="fname">FIRST NAME</label>
+				<input type="text" id="fname" required>
+				<label for="lname">LAST NAME</label>
+				<input type="text" id="lname" required>
+				<label for="email">EMAIL</label>
+				<input type="email" required>
+				<label for="number">PHONE NUMBER</label>
+				<input type="number" required>
+				<label for="password">PASSWORD</label>
+				<input type="text" required pattern="">
+				<label for="cpassword">CONFIRM PASSWORD</label>
+				<input type="text" required pattern="">
+				<button type="submit">Create Account</button>
+				<p>Already have an account? <span><a onclick="alert('one day lol')">Log in</a></span></p>
+			</form>
+		</div>
+	</section>
+	</main>
+</body>
+</html>
