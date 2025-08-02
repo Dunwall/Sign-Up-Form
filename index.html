@@ -5,37 +5,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sign Up Form</title>
 	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="reset.css">
 </head>
 <body>
 	<main class="container">
-	<section>
-		<div class="side">
-			<img src="odin-lined.png" alt="Odin Logo">
-			<h2 class="font">ODIN</h2>
+	<section class="side">
+		<div class="logo">
+				<img src="odin-lined.png" alt="Odin Logo">
+				<h2 class="font">ODIN</h2>
 		</div>
 	</section>
-	<section>
+	<section class="form-container">
 		<div>
-			<h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+			<h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>
 			Sign up <i>now</i> to get started.</h3>
 			<br>
 			<h3>You <i>know</i> you want to.</h3>
 		</div>
 		<div>
-			<form action="get" class="form">
-				<p>Let's do this!</p>
-				<label for="fname">FIRST NAME</label>
-				<input type="text" id="fname" required>
-				<label for="lname">LAST NAME</label>
-				<input type="text" id="lname" required>
-				<label for="email">EMAIL</label>
-				<input type="email" required>
-				<label for="number">PHONE NUMBER</label>
-				<input type="number" required>
-				<label for="password">PASSWORD</label>
-				<input type="text" required pattern="">
-				<label for="cpassword">CONFIRM PASSWORD</label>
-				<input type="text" required pattern="">
+			<form action="get">
+				<p><b>Let's do this!</b></p>
+				<div class="input-fields">
+				<div class="left">
+					<label for="fname">FIRST NAME</label>
+					<input type="text" id="fname">
+					<label for="email">EMAIL</label>
+					<input type="email">
+					<label for="password">PASSWORD</label>
+					<input type="text" required pattern="\w{10}">
+				</div>
+				<div class="right">
+					<label for="lname">LAST NAME</label>
+					<input type="text" id="lname">
+					<label for="number">PHONE NUMBER</label>
+					<input type="tel" pattern="\d{10}" maxlength="10">
+					<label for="cpassword">CONFIRM PASSWORD</label>
+					<input type="text" required pattern="\w{10}">
+				</div>
+				</div>
 				<button type="submit">Create Account</button>
 				<p>Already have an account? <span><a onclick="alert('one day lol')">Log in</a></span></p>
 			</form>

@@ -3,6 +3,11 @@
 	--inputBorder: #E5E7EB;
 	--invalid: red;
 	--focused: blue;
+	--valid: green;
+}
+
+*{
+	font-family: sans-serif;
 }
 
 @font-face{
@@ -14,8 +19,124 @@
 
 .font{
 	font-family: 'Norse-Bold', sans-serif;
+	color: white;
 }
 
 a{
 	color: var(--button);
+	cursor: pointer;	
+}
+
+body{
+	height: 100vh;
+}
+
+.container{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.container section{
+	flex: 1;
+	height: 100%;
+}
+
+.logo{
+	background-color: black;
+
+}
+
+.logo img{
+	width: ;
+}
+
+.container section+section{
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-container{
+	padding: 5rem 4rem;
+}
+
+.form-container div{
+	height: 30%;
+	margin-bottom: 2rem;
+}
+
+.form-container div+div{
+	height: 70%;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+form p{
+	padding: 1.2rem 0rem;
+}
+ 
+.input-fields{
+	display: flex;
+	box-shadow: 0 10px 10px -10px black;
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+	gap: 4rem;
+}
+
+label{
+	font-size: 0.8rem;
+	letter-spacing: 0.1rem;
+}
+
+input{
+	border: 2px solid var(--inputBorder);
+	border-radius: 5px;
+	width: 20rem;
+	margin:1rem 0rem;
+}
+
+input:focus{
+	outline: 1px solid var(--focused);
+	box-shadow: 2px 2px 2px solid grey;
+}
+
+/*input:valid{
+	outline: 2px solid var(--valid);
+}
+
+input:invalid{
+	outline: 2px solid var(--invalid);
+}*/
+
+.left{
+	display: flex;
+	flex-direction: column;
+	padding-right: 1rem;
+}
+
+.right{
+	display: flex;
+	flex-direction: column;
+	padding-right: 1rem;
+}
+
+.side{
+	background-image: url('side.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+button{
+	width: 15rem;
+	border: none;
+	padding:0.5rem;
+	background-color: var(--button);
+	border-radius: 10px;
+	color:white;
+	cursor: pointer;
 }
