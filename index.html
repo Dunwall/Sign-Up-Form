@@ -28,19 +28,19 @@
 				<div class="input-fields">
 				<div class="left">
 					<label for="fname">FIRST NAME</label>
-					<input type="text" id="fname" placeholder="Your First Name">
+					<input type="text" id="fname" placeholder="Your First Name" required>
 					<label for="email">EMAIL <span style="color: red;">*</span></label>
 					<input type="email" placeholder="Your Email" required>
-					<label for="password">PASSWORD <span style="color: red;">*</span>(Must contain letter,underscore and number)</label>
-					<input type="text" required pattern="^(?=.*\d)(?=.*[A-Za-z])(?=.*\W)[A-Za-z\d\W].+$" placeholder="Ex: xxx_1223*">
+					<label for="password">PASSWORD <span style="color: red;">*</span></label>
+					<input type="text" required pattern="^(?=.*\d)(?=.*[A-Za-z])(?=.*\W)[A-Za-z\d\W].{8,}$" placeholder="Ex: xxx_1223*" title="Password must contain atleast 8 characters with upper and lowercase letters,numbers and symbols">
 				</div>
 				<div class="right">
 					<label for="lname">LAST NAME</label>
-					<input type="text" id="lname" placeholder="Your Last Name">
+					<input type="text" id="lname" placeholder="Your Last Name" required>
 					<label for="number">PHONE NUMBER</label>
 					<input type="tel" pattern="\d{10}" maxlength="10" placeholder="ex: 9999999999">
-					<label for="cpassword">CONFIRM PASSWORD<span style="color: red;">*</span>(Must contain letter,underscore and number)</label>
-					<input type="text" required pattern="^(?=.*\d)(?=.*[A-Za-z])(?=.*\W)[A-Za-z\d\W].+$" placeholder="Ex: xxx_1223*">
+					<label for="cpassword">CONFIRM PASSWORD<span style="color: red;">*</span></label>
+					<input type="text" required pattern="^(?=.*\d)(?=.*[A-Za-z])(?=.*\W)[A-Za-z\d\W].{8,}$" placeholder="Ex: xxx_1223*" title="Password must contain atleast 8 characters with upper and lowercase letters,numbers and symbols">
 				</div>
 				</div>
 				<button type="submit">Create Account</button>
