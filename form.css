@@ -20,6 +20,8 @@
 .font{
 	font-family: 'Norse-Bold', sans-serif;
 	color: white;
+	font-size: 4rem;
+	font-weight: 100;
 }
 
 a{
@@ -40,15 +42,22 @@ body{
 .container section{
 	flex: 1;
 	height: 100%;
+	display: flex;
+	flex-direction: column;
+
 }
 
 .logo{
-	background-color: black;
-
+	background-color: hsl(0, 100%, 0%, 0.5);
+	position: relative;
+	top: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .logo img{
-	width: ;
+	width: 15%;
 }
 
 .container section+section{
@@ -89,7 +98,7 @@ form p{
 
 label{
 	font-size: 0.8rem;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.1px;
 }
 
 input{
@@ -104,13 +113,13 @@ input:focus{
 	box-shadow: 2px 2px 2px solid grey;
 }
 
-/*input:valid{
-	outline: 2px solid var(--valid);
+input:user-valid{
+	outline: 1px solid var(--valid);
 }
 
-input:invalid{
-	outline: 2px solid var(--invalid);
-}*/
+input:user-invalid{
+	outline: 1px solid var(--invalid);
+}
 
 .left{
 	display: flex;
